@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/gambar_menu"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="4dp" />
+
+            <TextView
+                android:id="@+id/nama_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/gambar_menu"
+                android:text="NAMA MENU"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/harga_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nama_menu"
+                android:layout_toRightOf="@id/gambar_menu"
+                android:text="Harga :" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
